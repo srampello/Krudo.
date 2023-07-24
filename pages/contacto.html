@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5c298f5609.js" crossorigin="anonymous"></script>
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Krudo. | Contacto</title>
+</head>
+<body>
+    <header class="hd-main">
+      <div class="logo"><a href="../index.html" class="enlace">
+          <img src="https://drive.google.com/uc?id=1jgKvAuOhnKta7MD8jsutlw1iVkYfV5sZ&export=download" class="logo" alt="Krudo.">
+      </a></div>
+      <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+          <ul>
+              <li><a href="nosotros.html" class="link text-decoration-none">Nosotros</a></li>
+              <li><a href="eventos.html" class="link text-decoration-none">Eventos</a></li>
+              <li><a href="shotnow.html" class="link text-decoration-none">ShotNow!</a></li>
+              <li><a href="contacto.html" class="link text-decoration-none">Contacto</a></li>
+          </ul>
+      </nav>
+    </header>
+    <script>
+      burger = document.querySelector(".burger");
+      burger.onclick = function(){
+          navBar = document.querySelector(".nav-bar");
+          navBar.classList.toggle("active");
+      }
+    </script>
+
+      <main class="principal-contacto">
+        <div class="krudo-container">
+          <a href="https://www.instagram.com/krudo.co/"><i class="krudo-ig fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+        </div>
+        <!--contacto-->
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 m-2 mx-auto text-light"><h1>Krudo.</h1> <p class="fst-italic fw-semibold">Somos una empresa audiovisual líder en el mercado, especializada en ofrecer soluciones visuales de alta calidad para eventos memorables. Nuestro equipo de expertos está listo para hacer realidad tus ideas y superar tus expectativas. Contáctanos ahora mismo y descubre cómo podemos llevar tu evento al siguiente nivel con nuestra experiencia y pasión por la excelencia visual. ¡Esperamos trabajar contigo pronto!</p></div>
+            <div class="col-md-6 col-lg-6 m-2 mx-auto ">
+              <h1 class="text-light">Contactanos</h1>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="E-mail" aria-label="email">
+                </div>
+                <div class="form-floating mt-1">
+                  <textarea class="form-control" placeholder="Contamos sobre ustedes y sobre el evento" id="floatingTextarea2" style="height: 200px;"></textarea>
+                </div>
+                <button type="button" class="btn btn-outline-secondary mt-2 mx-auto bg-dark d-grid gap-2" style="width: 50%;">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div id="myCarousel" class="carousel slide mb-6 mx-3 mx-md-5" data-bs-ride="carousel" data-bs-theme="light">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img src="https://drive.google.com/uc?id=1jz47N6ksAD_6xuDzXOlrmOhEMQwGZZNT&export=download" class="d-block w-100" alt="santis2412">
+              <div class="container">
+                <div class="carousel-caption">
+                  <p><a class="btn btn-dark" href="../pages/nosotros.html">Nosotros</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://drive.google.com/uc?id=1jvKPB2KtoSrhTbeSxwCh2vIae8siKU0i&export=download" class="d-block w-100" alt="ferpa16">
+              <div class="container">
+                <div class="carousel-caption">
+                  <p><a class="btn btn-dark" href="../pages/eventos.html">Eventos</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://drive.google.com/uc?id=1LZiT9vgWDg7lYD9TNg3ZOTEWe9jnuFMB&export=download" class="d-block w-100" alt="shot48">
+              <div class="container">
+                <div class="carousel-caption">
+                  <p><a class="btn btn-dark" href="../pages/shotnow.html">ShotNow</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+         
+    </main>
+    <footer>
+      <div class="menu-down">
+        <ul>
+            <li><a href="nosotros.html" class="link text-decoration-none">Nosotros</a></li>
+            <li><a href="eventos.html" class="link text-decoration-none">Eventos</a></li>
+            <li><a href="shotnow.html" class="link text-decoration-none">ShotNow!</a></li>
+            <li><a href="contacto.html" class="link text-decoration-none">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="ddrr">
+        ©Krudo. 2023 All right reserved
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

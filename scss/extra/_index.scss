@@ -1,0 +1,32 @@
+//imports
+@import "../utilidades/variables";
+
+/*---------- INDEX ----------*/
+/*---------- Gallery ---------*/
+.photos{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    .gallery{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .img-a, .img-b, .img-c, .img-d, .img-e, .img-f{
+            grid-column: 1/4;
+        }
+        .img-g, .img-h, .img-i, .img-j, .img-k, .img-l, .img-m, .img-n, .img-o, .img-p, .img-q, .img-r, .img-s{
+            display: none;
+        }
+    }
+}
+/*---------- INDEX ----------*/

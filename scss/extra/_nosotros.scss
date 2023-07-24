@@ -1,0 +1,76 @@
+//imports
+@import "../utilidades/variables";
+
+/*---------- NOSOTROS ----------*/
+.principal-nosotros{
+    .nosotros{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        .que-hacemos-img{
+            margin: 10px 20px 10px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            img{
+                @include style-nos-img;
+            }
+            img:hover{
+                filter: grayscale(0);
+                transition: all 0.6s ease;
+            }
+        }
+        h1{
+            color: nth($colores, 6);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        p{
+            @include style-p(17px);
+        }
+    }
+    .pilares{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        align-items: center;
+        h1{
+            color: nth($colores, 6);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-left: 25px;
+        }
+        p{
+            @include style-p(15px);
+        }
+    }
+    .pilares-img{
+        margin: 25px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5px;
+        img{
+            @include style-nos-img;
+        }
+        img:hover{
+            filter: grayscale(0);
+            transition: all 0.6s ease;
+        }
+    }
+    .workflow{
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        margin-bottom: 5px;
+        h1{
+            color: nth($colores, 6);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-top: 5px;
+            margin-left: 25px;
+        }
+        p{
+            @include style-p(15px);
+        }
+    }
+} 
+/*---------- NOSOTROS ----------*/

@@ -1,0 +1,17 @@
+/*---------- CONTACTO ----------*/
+.nav-link{
+    position: relative;
+}
+
+.nav-link::after{
+    @include style-header-a-after;
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.principal-contacto div div .form-control{
+    resize: none;
+}
+/*---------- CONTACTO ----------*/

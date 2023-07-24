@@ -1,0 +1,68 @@
+/* ---------- EVENTOS ----------*/
+.principal-eventos{
+    .eventos-exp{
+        margin: 5px;
+        font-family: 'Lexend Deca', sans-serif;
+        display: grid;
+        p{
+            color: nth($colores, 6);
+            margin: 10px 25px 10px 25px;
+            text-align: justify;
+        }
+    }
+    .resumen-eventos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+        margin: auto;
+        .resumen-uno, .resumen-dos, .resumen-tres, .resumen-cinco, .resumen-seis, .resumen-siete, .resumen-ocho, .resumen-nueve, .resumen-diez{
+            display: grid;
+            background-color: nth($colores, 6);
+            border: 3px solid nth($colores, 2);
+            grid-template-columns: 150px;
+            grid-template-rows: auto auto auto;
+            margin: 10px auto 10px auto;
+            padding: 20px;
+            width: auto;
+        }
+        img{
+            width: 150px;
+            height: 30vh;
+        }
+        h2{
+            padding-top: 5px;
+            font-size: 15px;
+            color: nth($colores, 3);
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        .btn{
+            padding-top: 5px;
+            font-size: 10px;
+            color: nth($colores, 7);
+            text-transform: uppercase;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+    }
+} 
+
+
+/*----- EVENTOS PAGE -----*/
+.event-img{
+    img{
+        object-fit: cover;
+        height: 100%;
+    }
+}
+.event-vid{
+    div{
+        display: flex;
+        justify-content: center;
+    }
+    video{
+        object-fit: cover;
+        width: 50%;
+        height: 50%;
+    }
+}
+/*----- EVENTOS PAGE -----*/
+/*---------- EVENTOS ----------*/

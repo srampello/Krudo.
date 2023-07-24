@@ -1,0 +1,207 @@
+//imports
+@import "utilidades/variables";
+@import "extra/index";
+@import "extra/nosotros";
+@import "extra/eventos";
+@import "extra/contacto";
+@import "extra/shotnow";
+@import "extra/media";
+
+/*---------- Krudo. ----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: nth($colores, 3);
+}
+
+/*---------- HEADER y HEADER-DOWN ----------*/
+.hd-main{
+    @include style-header;
+    .logo{
+        width: 60px;
+    }
+    .nav-bar ul{
+        display: flex;
+        li a{
+            @include style-header-a;
+        }
+        li a::after{
+            @include style-header-a-after;
+        }
+        li a:hover::after{
+            opacity: 1;
+        }
+    }
+}
+
+.menu-down{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    ul li{
+        bottom: 15px;
+        margin: 5px;
+        padding: 10px;
+        display: inline-block;
+        text-decoration: none;
+        a{
+            color: nth($colores, 6);
+            position: relative;
+        }
+        a::after{
+            @include style-header-a-after;
+        }
+        a:hover::after{
+            opacity: 1;
+        }
+    }
+}
+
+.ddrr{
+    @include style-ddrr;
+}
+/*---------- HEADER y HEADER-DOWN ----------*/
+
+/*---------- UP BUTTON ----------*/
+.go-top-container .go-top-btn{
+    @include style-btn-up;
+} 
+
+.krudo-container .krudo-ig{
+    @include style-btn-krudo;
+}
+/*---------- UP BUTTON ----------*/
+/*---------- CONTAINER PHOTO ENTER ----------*/
+.image-enter{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    .fondo{
+        position: absolute;
+        left: -100%;
+        right: -100%;
+        top: 5%;
+        bottom: -100%;
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+    }
+    h1{
+        position: absolute;
+        font-size: 90px;
+        color: nth($colores, 6);
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+    h2{
+        position: absolute;
+        font-size: 40px;
+        color: nth($colores, 6);
+        margin-top: 135px;
+        margin-left: 25px;
+    }
+    h3{
+        position: absolute;
+        font-size: 25px;
+        color: nth($colores, 6);
+        margin-top: 185px;
+        margin-left: 25px;
+    }
+}
+/*---------- CONTAINER PHOTO ENTER ----------*/
+/*---------- SEPARADOR ----------*/
+.separador{
+    table{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        padding: 2px;
+        background-color: nth($colores, 5);
+        border-top: 2px solid nth($colores, 1);
+        border-bottom: 2px solid nth($colores, 1);
+        text-align: center;
+    }
+    .logokrudo img{
+        height: 40px;
+        width: 40px;
+    }
+    h1{
+        font-size: 20px;
+        color: nth($colores, 6);
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Lexend Deca', sans-serif;
+        text-shadow: 0 0 5px nth($colores, 3);
+    }
+}
+/*---------- SEPARADOR ----------*/
+/*---------- FOOTER ----------*/
+footer{
+    .contact{
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        .left-form{
+            background-color: nth($colores, 4);
+            padding: 20px;
+            text-align: left;
+            h1{
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 30px;
+            }
+            h2{
+                margin-top: 10px;
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: 300;
+                font-size: 15px;
+            }
+        }
+        .container-form{
+            background-color: nth($colores, 2);
+            padding: 20px;
+            h1{
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 30px;
+            }
+            .form{
+                .campo-name{
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    padding: 10px;
+                    width: 100%;
+                    height: 40px;
+                }
+                textarea{
+                    margin-bottom: 5px;
+                    font-size: 15px;
+                    padding: 10px;
+                    width: 100%;
+                    height: 100px;
+                    resize: none;
+                }
+                .campo-email{
+                    margin-bottom: 5px;
+                    padding: 10px;
+                    width: 100%;
+                    height: 40px;
+                }
+                .btn-enviar{
+                    width: 100%;
+                    height: 35px;
+                    font-size: 16px;
+                    font-family: 'Lexend Deca', sans-serif;
+                }
+            } 
+        }
+    }
+
+} 
+/*---------- FOOTER ----------*/

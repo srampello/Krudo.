@@ -1,0 +1,70 @@
+/*---------- ShotNow! ----------*/
+.shotnow{
+    .enter-shotnow{
+        height: 100vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    div div img{
+        height: 400px;
+    }
+    .principal-shotnow{
+        .galeria{
+            margin: 15px auto;
+            display: flex;
+            width: 90vw;
+            height: 430px;
+            img, video{
+                width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: .8;
+                transition: .5s ease;
+            }
+            img:hover, video:hover{
+                cursor: crosshair;
+                width: 300px;
+                opacity: 1;
+                filter: contrast(120%);
+            }
+        }
+        .redes{
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            text-align: center;
+        }
+        .maquina-shot{
+            .img{
+                perspective: 1000px;
+                .texto-img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+            .img:hover{
+                .texto-img{
+                    opacity: 1;
+                }
+                img{
+                    opacity: 0.2;
+                    filter: blur(10px);
+                    filter: grayscale(60%);
+                }
+
+            } 
+
+        } 
+
+    } 
+} 
+/*---------- ShotNow! ----------*/

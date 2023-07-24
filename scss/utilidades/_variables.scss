@@ -1,0 +1,116 @@
+//varibales
+
+//listas
+//paleta de colores
+$colores:
+#4D4D4D,
+#243033,
+#000000,
+#3D4648,
+#999999,
+#ffffff,
+#ff0000;
+
+
+//como usar lista de colores
+//nth($colores, 1);
+
+//mixing
+@mixin style-header{
+    background: nth($colores, 3);;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    z-index: 2;
+    position: sticky;
+}
+
+@mixin style-header-a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: nth($colores, 6);
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.2s;
+    margin:  0 5px;
+    position: relative;
+}
+
+@mixin style-header-a-after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: nth($colores, 6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin style-ddrr{
+    display: block;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: nth($colores, 6);
+}
+
+@mixin style-btn-up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #0000009c;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: nth($colores, 6);
+    font-size: 22px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+@mixin style-btn-krudo{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #0000009c;
+    bottom: 10px;
+    left: 10px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: nth($colores, 6);
+    font-size: 22px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+@mixin style-p($font){
+    color: nth($colores, 6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $font;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+@mixin style-nos-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: grayscale(1);
+    transition: all 0.8s ease;
+}
+
